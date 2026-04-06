@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-yellow: #d9ff00;
+  --color-brand-dark: #0f172a;
+  --color-brand-gray: #1e293b;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased;
+  }
+}
+
+.parallelogram-btn {
+  @apply relative inline-block px-8 py-3 bg-brand-yellow text-black font-bold transition-transform hover:scale-105;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.dot-pattern {
+  background-image: radial-gradient(circle, #ffffff22 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.grid-lines {
+  background-image: linear-gradient(to right, #ffffff11 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff11 1px, transparent 1px);
+  background-size: 40px 40px;
+}
