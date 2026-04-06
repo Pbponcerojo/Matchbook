@@ -77,20 +77,39 @@ button.secondary {
 
 /* CARDS */
 .card {
-  padding: 30px;
-  border: 1px solid #eee;
+  padding: 32px;
+  border: 1px solid #e5e2dc;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #dcd7cf;
 }
 
 /* TESTIMONIOS */
 .testimonials .card {
   font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* CTA */
 .cta {
-  margin-top: 120px;
-  padding: 60px;
+  margin-top: 140px;
+  padding: 80px 40px;
   background: #111;
   color: white;
   text-align: center;
+}
+
+.cta h3 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  color: #ccc;
+  margin-bottom: 24px;
 }
